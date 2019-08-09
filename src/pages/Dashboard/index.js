@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Container } from './style';
+import { Container, Content } from './style';
 import Sidemenu from '../../components/Sidemenu';
 import Header from '../../components/Header';
+import Card from '../../components/Card';
 
 
 export default class DashboardPage extends Component {
@@ -10,6 +11,9 @@ export default class DashboardPage extends Component {
       <Container>
         <Sidemenu />
         <Header />
+        <Content>
+          <Card />
+        </Content>
       </Container>
     );
   }

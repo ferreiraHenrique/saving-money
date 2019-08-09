@@ -8,4 +8,16 @@ export const Container = styled.div`
 
   display: grid;
   grid-template-columns: 20vw 80vw;
+  grid-template-rows: 70px 1fr;
+`;
+
+export const Content = styled.div`
+  grid-column: 2;
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30% 65%;
+  grid-row-gap: 5%;
+  grid-column-gap: 15px;
 `;
