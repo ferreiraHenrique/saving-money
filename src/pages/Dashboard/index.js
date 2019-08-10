@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Content } from './style';
+import { MdAdd } from 'react-icons/md';
+import { Container, Content, CardsContainer, NewCardButton } from './style';
 import Sidemenu from '../../components/Sidemenu';
 import Header from '../../components/Header';
 import Card from '../../components/Card';
+import LastTransactions from '../../components/LastTransactions';
 
 
 export default class DashboardPage extends Component {
@@ -12,7 +14,16 @@ export default class DashboardPage extends Component {
         <Sidemenu />
         <Header />
         <Content>
-          <Card />
+          <CardsContainer>
+            <Card />
+            <NewCardButton>
+              <div>
+                <MdAdd />
+              </div>
+              <span>Add card</span>
+            </NewCardButton>
+          </CardsContainer>
+          <LastTransactions />
         </Content>
       </Container>
     );

@@ -21,3 +21,40 @@ export const Content = styled.div`
   grid-row-gap: 5%;
   grid-column-gap: 15px;
 `;
+
+export const CardsContainer = styled.div`
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+`;
+
+export const NewCardButton = styled.div`
+  display: grid;
+  grid-row-gap: 10px;
+  justify-items: center;
+
+  color: rgb(99,99,108);
+
+  > div {
+    background-color: rgba(245,100,27, .1);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    align-self: end;
+  }
+
+  span {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+  svg {
+    color: rgb(245,100,27);
+    font-weight: 300;
+  }
+`;
